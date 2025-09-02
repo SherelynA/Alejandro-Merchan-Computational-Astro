@@ -1,2 +1,2 @@
 # Alejandro-Merchan-Computational-Astro
-Repository which holds assignment for computational astrophysics class.
+Repository which holds assignments for computational astrophysics class.
