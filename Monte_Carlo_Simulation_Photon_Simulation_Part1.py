@@ -8,6 +8,13 @@ import random
 
 
 def simulation_setup(plot_sim=False, save_sim=False):
+    """
+        Description:
+        ------------
+        Function Setting up the Monte Carlo Simulation of Photon Scattering in a Slab
+
+    """
+
     # Physical constants and parameters
     sigma_t = const.sigma_T.cgs.value  # Thomson cross-section [cm^2]
     n_electron = 1e20  # electron number density [cm^-3]
