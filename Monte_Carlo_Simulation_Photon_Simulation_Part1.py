@@ -37,15 +37,33 @@ def simulation_setup(plot_sim=False, save_sim=False):
 
 
 def free_path(lmbda):
+    """
+        Description:
+        ------------
+        Function Generating Free Path Lengths for Photons Based on Exponential Distribution
+
+    """
     u = random.random()
     return -lmbda * np.log(u)
 
 
 def isotropic_mu():
+    """
+        Description:
+        ------------
+        Function Generating Isotropic Mu
+
+    """
     return 2.0 * random.random() - 1.0
 
 
 def simulate_photon_path(mean_free_path, slab_width, max_scatters, mu0=1.0):
+    """
+        Description:
+        ------------
+        Function Simulating the Path of a Single Photon through the Slab
+
+    """
 
     # Initializing photon position and direction, along with mu
     x = 0.0
@@ -79,6 +97,12 @@ def simulate_photon_path(mean_free_path, slab_width, max_scatters, mu0=1.0):
 
 # Run a set of photon simulations
 def photon_simulations(mean_free_path, slab_width, max_scatters, number_photons=100):
+    """
+        Description:
+        ------------
+        Function Running Multiple Photon Simulations through the Slab
+
+    """
     paths = []
     outcomes = []
     for i in range(number_photons):
@@ -94,6 +118,12 @@ def photon_simulations(mean_free_path, slab_width, max_scatters, number_photons=
 
 
 def photon_animation(paths, slab_width, number_photons):
+    """
+        Description:
+        ------------
+        Function Creating Animation of Photon Paths through the Slab
+
+    """
 
     # Calculate photon paths and outcomes
     # Set up animation of photon paths
