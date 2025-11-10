@@ -9,7 +9,7 @@ def orbit_setup():
     b = 10      # end time
     N = 1000     # number of steps
     h = (b - a) / N
-    #Initial Conditions for position and
+    #Initial Conditions for position and velocity
     x0, y0, vx0, vy0 = 1.0, 0.0, 0.0, 1.0
     ball_state = np.array([x0, y0, vx0, vy0])
     time_points = np.arange(a, b, h)
